@@ -1,0 +1,16 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+/* body {
+    background-color: #D4AF37;
+    color: #0C0C0D;
+}
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr;
+}
