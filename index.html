@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="grid-container">
+<body>
+     <h1>Accessible Design Company</h1>
+    
     <!--A company logo and a responsive navigation bar: Home About Us Services and Contact-->
-    <header>
+    <header class="header">
+        <div>
         <img src="images/adc-logo.jpg" alt="company logo">
-        <h1>Accessible Design Co.</h1>
-        
-     <!--I want the navigation on the left side of the page-->   
-        <nav role="navigation">
-            <ol>
+        </div>
+     <!--It also has to be a responsive navigation bar that adjusts to different screen sizes using flexbox-->   
+        <nav class="navigation" role="navigation">
+            <ul>
                 <li><a href="#top">Home</a></li>
-                <li><a href="#About-Us">About Us</a></li>
+                <li><a href="#About-Us">About</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#Contact">Contact</a></li>
-            </ol> 
+            <ul> 
         </nav>
 
     </header>
 
-    <!--Hero Section About Us Section Services Section and Contact Form-->
+    <!--Hero Section About Us Section Services Section and Contact Form
+    Use CSS Grid to create a multi-column layout for the main content area that collapses to a single column on mobile devices
+    Add media queries to adjust the layout and font sizes for different screen sizes (e.g., 600px and 1024px breakpoints).-->
     <main>
         <section id="hero-container">
             <div class="hero-content">
@@ -34,7 +38,7 @@
                 <p>Our goal is to make software and websites more accessible to everyone.</p>
                 
                 <div id="hero-action">
-                    <button class="hero-button">Learn About Our Vision and Mission</button>
+                    <button class="hero-button">Learn About Our Mission and Vision</button>
                 </div>
              </div>
        

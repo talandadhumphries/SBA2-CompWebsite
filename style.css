@@ -1,7 +1,4 @@
-img {
-    height: 100px;
-    width: 100px;
-}
+
 
 /* body {
     background-color: #D4AF37;
@@ -9,8 +6,20 @@ img {
 }
 */
 
-.grid-container {
+.header {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: min-content 1fr 1fr;
+    align-items: center;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
 }
