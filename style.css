@@ -10,7 +10,9 @@ body {
     display: grid;
     grid-template-columns: min-content 1fr;
     align-items: center;
-    background-color: aqua;
+    background-color: #0C0C0D;
+    color:#D4AF37;
+    
 }
 
 img {
@@ -19,7 +21,6 @@ img {
 }
 
 header div {
-    background-color: bisque;
     display: flex;  
 
 }
@@ -41,8 +42,16 @@ header h1 {
 .navigation {
     display: flex;
     flex-direction: row;
-   
+       
     }
+
+.navigation a {
+    color:#D4AF37;
+}
+
+#main div {
+    background-color: blue;
+}
 
 @media (max-width: 700px) {
     .navigation {
