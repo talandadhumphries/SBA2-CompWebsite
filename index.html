@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-     <h1>Accessible Design Company</h1>
+<!--A company logo and a responsive navigation bar: Home About Us Services and Contact-->
     
-    <!--A company logo and a responsive navigation bar: Home About Us Services and Contact-->
-    <header class="header">
+<body>
+     <header class="header">
         <div>
-        <img src="images/adc-logo.jpg" alt="company logo with company initials">
+        <img src="images/adc-logo.jpg" alt="company logo displaying initials adc">
+        <h1 aria-label="Company name">Accessible Design Company</h1>
         </div>
      <!--It also has to be a responsive navigation bar that adjusts to different screen sizes using flexbox-->   
         <nav class="navigation" role="navigation">
@@ -25,9 +25,9 @@
                 <li><a href="#Contact">Contact</a></li>
             <ul> 
         </nav>
+   </header> 
 
-    </header>
-
+    
     <!--Hero Section About Us Section Services Section and Contact Form
     Use CSS Grid to create a multi-column layout for the main content area that collapses to a single column on mobile devices
     Add media queries to adjust the layout and font sizes for different screen sizes (e.g., 600px and 1024px breakpoints).-->
@@ -63,31 +63,53 @@
         <section id="Contact" Aria-label="Contact Section">
             <h2>Contact Us</h2>
             <p>If you require our services or have questions, please complete the form below. We will respond within 48 hours.</p>
-            <form id="Contact-Form" Aria-label="Contact Form">
+            <form class="Contact-Form" Aria-label="Contact Form">
+            <div> 
                 <label for="name">Name</label>
                 <input type="text" id="name" required>
+            </div>
+
+             <div>  
                 <label for="email">Email</label>
                 <input type="email" id="email" required>
+            </div>   
+            
+            <div>
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" required>
+            </div>
+                
+            <div>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" required></textarea>
+            </div>  
+
                 <button type="submit">Submit</button>
             </form>
         </section>
     
     </main>
-    
     <!--Copyright information, social media links, and contact details-->
+    
     <footer>
-        <section>
+        <div>
             <p>&copy; 2020 Accessible Design Co.</p>
+         </div>
+
+         <div>  
             <a href="http://www.facebook.com">Facebook</a>
             <a href="http://www.instagram.com">Instagram</a>
             <a href="http://www.tiktok.com">Tiktok</a>
+         </div> 
+
+         <div>
             <address>123 Main St, Omaha Nebraska 55555</address>
             <a href="tel:+1-555-555-5555">1-555-555-5555</a>
-        </section>
+        </div>
+
     </footer>
 </body>
+    
+    
+
 </html>
