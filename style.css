@@ -49,9 +49,27 @@ header h1 {
     color:#D4AF37;
 }
 
-#main div {
-    background-color: blue;
+h2 {
+    font-size:xx-large; 
 }
+
+#hero-container {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-top: 100px;
+    
+    
+    
+}
+
+.mv-button {
+    background-color: #D4AF37;
+    border-color:black;
+    border-radius: 100px;
+    border-width: 20px;
+    
+}
+
 
 @media (max-width: 700px) {
     .navigation {
